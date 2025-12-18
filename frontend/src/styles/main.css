@@ -1,0 +1,28 @@
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background: #f6f2ee; /* 이미지 느낌 베이지 */
+}
+
+.layout {
+  display: flex;
+  height: 100vh;
+}
+
+.left-sidebar {
+  width: 280px;
+  padding: 20px;
+  background: #fbf9f7;
+}
+
+.main-content {
+  flex: 1;
+  padding: 32px;
+}
+
+.right-bookmark {
+  width: 60px;
+  background: #f0ebe6;
+  text-align: center;
+  padding-top: 40px;
+}

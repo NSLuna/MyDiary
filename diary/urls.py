@@ -1,9 +1,10 @@
 from django.urls import path, include
 from rest_framework.routers import DefaultRouter
-from .views import DailyLogViewSet
+from .views import DailyLogViewSet, TaskViewSet
 
 router = DefaultRouter()
 router.register(r'dailylogs', DailyLogViewSet, basename='dailylog')
+router.register("tasks", TaskViewSet, basename="task")
 
 urlpatterns = [
     path("", include(router.urls)),
