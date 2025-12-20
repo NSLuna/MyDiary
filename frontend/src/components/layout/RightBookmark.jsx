@@ -1,10 +1,24 @@
 function RightBookmark() {
+  const months = [
+    "JAN","FEB","MAR","APR","MAY","JUN",
+    "JUL","AUG","SEP","OCT","NOV","DEC"
+  ];
+
   return (
     <aside className="right-bookmark">
-      <p>Jan</p>
-      <p>Feb</p>
-      <p>Mar</p>
-      <p>Settings</p>
+      <div className="month-tabs">
+        {months.map(month => (
+          <div key={month} className="month-tab">
+            {month}
+          </div>
+        ))}
+      </div>
+
+      <div className="bookmark-divider" />
+
+      <div className="settings-tab">
+        ⚙
+      </div>
     </aside>
   );
 }

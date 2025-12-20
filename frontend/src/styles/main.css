@@ -26,3 +26,220 @@ body {
   text-align: center;
   padding-top: 40px;
 }
+
+.section-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.weekly-overview {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+/* 하루 한 줄 */
+.day-row {
+  display: flex;
+  align-items: flex-start;
+}
+
+/* 왼쪽 날짜 컬럼 */
+.day-date {
+  width: 70px;
+  text-align: right;
+  padding-right: 18px;
+  color: #555;
+}
+
+.date-number {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.day-name {
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+/* 오른쪽 내용 */
+.day-tasks {
+  flex: 1;
+  padding-bottom: 14px;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* 할 일 줄 */
+.task-line {
+  height: 14px;
+}
+
+.left-sidebar {
+  width: 280px;
+  padding: 24px;
+  background: #fbf9f7;
+  border-right: 1px solid #e6e1db;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+/* 주 정보 */
+.week-header {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.week-number {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.today-date {
+  font-size: 13px;
+  color: #777;
+}
+
+/* 미니 캘린더 */
+.mini-calendar {
+  font-size: 12px;
+}
+
+.month-label {
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 4px;
+}
+
+.calendar-day {
+  text-align: center;
+  color: #999;
+}
+
+/* 체크리스트 */
+.weekly-checklist ul {
+  list-style: none;
+  padding: 0;
+  margin: 8px 0 0;
+}
+
+.weekly-checklist li {
+  font-size: 14px;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.priorities {
+  font-size: 14px;
+}
+
+.priorities ul {
+  list-style: none;
+  padding: 0;
+  margin: 8px 0 0;
+}
+
+.priorities li {
+  margin-bottom: 6px;
+  padding-left: 10px;
+  position: relative;
+}
+
+.priorities li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #c4b7a6;
+}
+
+
+.ai-entry {
+  margin-top: 32px;
+  padding-top: 16px;
+
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  font-size: 13px;
+  color: #777;
+
+  border-top: 1px dashed #ddd;
+}
+
+.ai-icon {
+  font-size: 16px;
+}
+
+.ai-label {
+  cursor: default;
+}
+
+
+
+
+.right-bookmark {
+  width: 64px;
+  background: transparent;
+  border-left: 1px solid #e6e1db;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 24px;
+  gap: 12px;
+}
+
+/* 월 탭 */
+.month-tabs {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.month-tab {
+  width: 44px;
+  padding: 6px 0;
+  text-align: center;
+  font-size: 11px;
+  letter-spacing: 1px;
+  color: #777;
+  border-radius: 0 6px 6px 0;
+  cursor: default;
+}
+
+/* 현재 월 (디자인용) */
+.month-tab.active {
+  background: #fbf9f7;
+  color: #333;
+  font-weight: 600;
+}
+
+/* 구분선 */
+.bookmark-divider {
+  width: 24px;
+  height: 1px;
+  background: #ddd;
+  margin: 12px 0;
+}
+
+/* 설정 탭 */
+.settings-tab {
+  font-size: 16px;
+  color: #777;
+  margin-top: auto;
+  margin-bottom: 24px;
+}
+
+
