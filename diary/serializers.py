@@ -7,6 +7,17 @@ class DailyLogSerializer(serializers.ModelSerializer):
         fields = "__all__"
 
 class TaskSerializer(serializers.ModelSerializer):
+    daily_date = serializers.DateField(
+        source="daily_log.date",
+        read_only=True
+    )
+
     class Meta:
         model = Task
-        fields = "__all__"
+        fields = [
+            "id",
+            "content",
+            "is_done",
+            "source",
+            "daily_date",
+        ]

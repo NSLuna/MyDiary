@@ -38,6 +38,10 @@ function MainLayout() {
               </div>
             ))}
           </div>
+        <div className="note-entry">
+          <span className="ai-icon">NOTE</span>
+          <span className="ai-label">가벼운 메모장</span>
+        </div>  
           
         <div className="ai-entry">
           <span className="ai-icon">💬</span>

@@ -165,6 +165,20 @@ body {
 }
 
 
+.note-entry {
+  margin-top: 32px;
+  padding-top: 16px;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  font-size: 13px;
+  color: #777;
+
+  border-top: 1px dashed #ddd;
+}
+
 .ai-entry {
   margin-top: 32px;
   padding-top: 16px;
